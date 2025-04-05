@@ -44,3 +44,35 @@ print(my_tuple.count("Prasad"))
 """The error is 
 TypeError: 'tuple' object does not support item assignment
 """
+# Explain why tuples are immutable.
+"""_summary_
+Tuples are immutable meaning they cannot be changed.Precisely speaking, we cannot change their values, their size.
+We cannot append, insert, remove, pop, and some other mutable methods. The only thing we can perform on tuples is  index and count
+which can only retrive information but won't change anything.
+"""
+# Tuple Packing and Unpacking
+packing_tuple = 1, 2, 3
+print(packing_tuple)
+# Create a tuple with three elements and unpack them into individual variables.
+a, b, c = packing_tuple
+# Print the unpacked values.
+print(a)
+print(b)
+print(c)
+# Tuple Iteration
+
+# Use a loop to iterate through my_tuple and print each element.
+for i in my_tuple:
+    print(i)
+# Tuple Usage
+
+# Write a function that returns multiple values using a tuple.
+
+
+def tuplefunc(tup):
+    a, b, c, d, e = my_tuple
+    return a, b, c, d, e
+
+
+# Call the function and print the returned tuple.
+print(tuplefunc(my_tuple))
